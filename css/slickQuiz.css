@@ -1,0 +1,147 @@
+/* BASE QUIZ STYLES */
+/* These styles ensure that the necessary elements are hidden for toggling */
+
+/* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
+
+.startQuiz,
+.nextQuestion,
+.backToQuestion,
+.questions li.question,
+.questions li.question .responses,
+.questions li.question .responses .correct,
+.questions li.question .responses .incorrect,
+.quizResults {
+    display: none;
+}
+
+/* If response messages are disabled or only shown on quiz completion,
+   nextQuestion button IS checkAnswer button - so it must be displayed */
+.nextQuestion.checkAnswer {
+    display: block;
+}
+
+ol.questions,
+ul.answers,
+ul.responses,
+ol.questions li,
+ul.answers li,
+ul.responses li {
+    list-style-type: none;
+}
+ul.responses {
+	padding: 0;
+}
+/* Accessibility */
+.quizName span:first-child {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Added
+ */
+
+.slickQuiz {
+	padding-bottom: 1em;
+	border-bottom: 1px solid #EEEEEE
+}
+
+.slickQuiz .button {
+    float: left;
+    width: auto;
+    padding: 5px 15px;
+    color:#ffffff;
+    background-color: #073763;
+    border: 1px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	text-decoration: none;
+}
+
+
+.slickQuiz .startQuiz {
+    margin-top: 40px;
+}
+
+.slickQuiz .tryAgain {
+    float: none;
+    margin: 20px 0;
+}
+
+/* clearfix */
+.slickQuiz .quizArea, .slickQuiz .quizResults {
+    zoom: 1;
+}
+.slickQuiz .quizArea:before, .slickQuiz .quizArea:after, .slickQuiz .quizResults:before, .slickQuiz .slickQuiz .quizResults:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+.slickQuiz .quizArea:after, .slickQuiz .quizResults:after {
+    clear: both;
+}
+
+.slickQuiz .questionCount {
+    font-size: 1em;
+    font-style: italic;
+}
+.slickQuiz .questionCount span {
+    font-weight: bold;
+}
+
+.slickQuiz ol.questions {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.slickQuiz ol.questions li {
+    margin-left: 0;
+}
+
+.slickQuiz ul.answers {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.slickQuiz ul.answers li {
+	display: flex;
+}
+.slickQuiz ul.answers li label { 
+	padding-left: 15px;
+	display: inline-block;
+}
+
+.slickQuiz ul.responses li {
+    margin: 10px 0;
+}
+.slickQuiz ul.responses li p span.bold {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.slickQuiz .complete ul.answers li.correct, .slickQuiz ul.responses li.correct p span.bold {
+    color: #F58634;
+}
+.slickQuiz ul.responses li.incorrect p span.bold {
+    color: #B5121B;
+}
+
+.slickQuiz .quizResults h3 {
+    margin: 0;
+}
+.slickQuiz .quizResults h3 span {
+    font-weight: normal;
+    font-style: italic;
+}
+.slickQuiz .quizResultsCopy {
+    clear: both;
+    margin-top: 20px;
+}

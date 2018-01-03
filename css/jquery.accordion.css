@@ -1,0 +1,72 @@
+/*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+    line-height: inherit;
+}
+
+[data-control] {
+	border-bottom: 1px solid #888;
+}
+
+[data-control],
+[data-content] > * {
+    padding: 10px;
+}
+
+[data-content] > article > h1 {
+	margin: 1em 0 0 0;
+}
+
+[data-content] > article > p:last-child {
+	margin-bottom: 2em;
+}
+
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] > h2 {
+    position: relative;
+    padding-right: 40px;
+    color: #bc5204;
+    background-color: #bc5204;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.4) 0px 1px 1px;
+}
+
+[data-accordion] > [data-control] > h2:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: url('../img/down.png') center center no-repeat;
+    background-size: 50%;
+}
+
+[data-accordion].open > [data-control] > h2:after {
+    -webkit-transform: rotate(-180deg); 
+    -ms-transform: rotate(-180deg); 
+    transform: rotate(-180deg); 
+}

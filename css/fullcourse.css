@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+#fullcourse {
+  margin: 2em auto;
+  width: 90%;
+  font-family: inherit;
+}
+#fullcourse i {
+  margin-right: 5px;
+}
+#fullcourse ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+}
+#fullcourse ul li {
+  position: relative;
+  display: block;
+  
+}
+#fullcourse ul li.sectionHeader {
+	background: #073763;
+}
+
+#fullcourse ul li a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  
+}
+#fullcourse > ul {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #DDDDDD;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+#fullcourse > ul > li:first-child > a {
+  border-radius: 3px 3px 0 0;
+}
+#fullcourse > ul > li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+#fullcourse > ul > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+#fullcourse > ul > li.active > a {
+  color: #073763;
+  background-color: #DDDDDD;
+}
+#fullcourse > ul > li.has-sub > a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border: 7px solid transparent;
+  border-top-color: #073763;
+  right: 5px;
+  top: 17px;
+  transition: all .25s ease;
+  transform-origin: 0 25%;
+}
+#fullcourse > ul > li.has-sub.active > a::after {
+  transform: rotateX(180deg);
+  border-top-color: #073763;
+}
+
+#fullcourse > ul > li > a {
+  padding: 15px 15px;
+  color: #073763;
+  transition: all 0.3s ease-out;
+  font-size: 1em;
+}
+
+#fullcourse > ul > li.sectionHeader > a {
+  color: #FFFFFF;
+}
+
+#fullcourse > ul > li.chapter-li {
+	position: relative;
+}
+#fullcourse > ul > li.chapter-li > i {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	transition: all .25s ease;
+}
+
+#fullcourse > ul > li.chapter-li > a {
+	padding-left: 4em;
+}
+#fullcourse ul ul li {
+	background-color: #FFFFFF;
+	padding: 12px 8px;
+	border-top: 1px solid #ddd;
+	line-height: 1.5;
+}
+
+#fullcourse ul ul li.active > a {
+  background-color: #FFFFFF;
+  color: #073763;
+}
+#fullcourse ul ul li.has-sub > a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border: 5px solid transparent;
+  border-top-color: #888;
+  right: 15px;
+  top: 15px;
+  transition: all .25s ease;
+  transform-origin: 0 25%;
+}
+#fullcourse ul ul li.has-sub.active > a::after {
+  transform: rotateX(180deg);
+  border-top-color: #777;
+}
+
+#fullcourse ul ul li a {
+  display: inline;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #073763;
+  transition: all 0.15s ease-out;
+}
+
+#fullcourse ul ul ul li a {
+  padding-left: 25px;
+}
+
+@media only screen and (max-width: 55em) {
+	#fullcourse {
+		width: 100%;
+	}
+}

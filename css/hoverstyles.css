@@ -1,0 +1,196 @@
+.icheckbox_square-orange-label:hover {
+	cursor: pointer;
+}
+
+#fullcourse > ul > li:hover > a::after {
+  border-top-color: #073763;
+}
+#fullcourse > ul > li > a:hover {
+  color: #073763;
+  background-color: #DDDDDD;
+}
+#fullcourse > ul > li.sectionHeader > a:hover {
+  color: #fff;
+  background-color: #073763;
+}
+#fullcourse > ul > li.chapter-li > i:hover {
+	cursor: pointer;
+	color: #F58634;
+}
+#fullcourse ul ul li:hover > a::after {
+  border-top-color: #777;
+}
+#fullcourse ul ul li a:hover {
+  background-color: #FFFFFF;
+  color: #f58634;
+  text-decoration:underline;
+}
+
+input:not([type=submit]):not([type=file]):not(.ui-state-error):hover { 
+	background: #F5F5F5; 
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .dialog-btn:hover {
+    background-color: #F58634;
+    background-image: none;
+    color: #FFFFFF;
+}
+.text-link:hover {
+	color: #f58634;
+	cursor: pointer;
+}
+.btn-signup:hover {
+	color: #073763;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px #073763, 0 0 0 3px #f58634;
+}
+
+.btn-take-exam:hover, .btn-teaser:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 3px #f58634;
+}
+.btn-unavailable:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 3px #073763;
+}
+.pageTabs li:hover {
+	background-color: #f58634;
+	cursor:pointer;
+}
+.pageTabs li a:hover {
+	color: #FFFFFF;
+}
+.courseExamTab ul li.examListing-chapter:hover {
+	cursor: pointer;
+	background-color: #F2F2F2;
+	color: #073763;
+}
+.courseNavContainer .courseNavHeader .text a:hover {
+	text-decoration: underline;
+}
+
+#cssmenu > ul > li:hover > a {
+  color: #f58634;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 23px;
+  height: 0;
+}
+#cssmenu li:hover > ul {
+  left: auto;
+}
+#cssmenu.align-right li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu li:hover > ul > li {
+  height: 35px;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+  color: #e69138;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  top: 17px;
+  height: 0;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  top: 17px;
+  height: 0;
+}
+#cssmenu.small-screen li:hover > ul > li {
+  height: auto;
+}
+#cssmenu.small-screen ul ul li:hover > a {
+  color: #ffffff;
+}
+
+#mobileNav > ul > li:hover > a::after {
+  border-top-color: #073763;
+}
+#mobileNav > ul > li > a:hover {
+  color: #073763;
+  background-color: #DDDDDD;
+}
+#mobileNav > ul > li.sectionHeader > a:hover {
+  color: #fff;
+  background-color: #073763;
+}
+#mobileNav > ul > li.chapter-li > i:hover {
+	cursor: pointer;
+	color: #F58634;
+}
+#mobileNav ul ul li:hover > a::after {
+  border-top-color: #777;
+}
+#mobileNav ul ul li a:hover {
+  background-color: #FFFFFF;
+  color: #f58634;
+  text-decoration:underline;
+}
+
+a:hover {
+	color: #f58634;
+	cursor: pointer;
+}
+a:hover {
+  outline: 0;
+}
+#sidebar > ul > li:hover > span::after {
+  border-top-color: #073763;
+}
+#sidebar > ul > li > span:hover {
+  color: #073763;
+  background-color: #DDDDDD;
+  cursor: pointer;
+  cursor: hand;
+}
+#sidebar > ul > li.sectionHeader > a:hover {
+  color: #fff;
+  background-color: #073763;
+}
+#sidebar > ul > li > span:hover {
+  color: #073763;
+  background-color: #DDDDDD;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#sidebar > ul > li.sectionHeader > a:hover {
+  color: #fff;
+  background-color: #073763;
+}
+#sidebar ul ul li:hover > a::after {
+  border-top-color: #777;
+}
+#sidebar ul ul li a:hover {
+  background-color: #FFFFFF;
+  color: #f58634;
+  text-decoration:underline;
+}
+.slickQuiz .button:hover {
+    background-color: #0A6D98;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

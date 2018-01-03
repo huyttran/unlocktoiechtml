@@ -1,0 +1,1998 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic);
+ 
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    font-family: sans-serif;
+    background-color: #e9e9e9;
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+	color: #073763;
+  	margin: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.625em;
+	position: relative;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/*
+ * Remove outline
+ */
+* {
+   outline: 0;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   A better looking horizontal rule 
+   ========================================================================== */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: .5em 0;
+    padding: 0;
+    background: #0A6D98; 
+    background-image: linear-gradient(to right, #ccc, #0A6D98, #ccc);
+}
+
+/* ========================================
+   Grid
+   ======================================== */
+
+*, *:before, *::before, *:after, *::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1.1em;
+}
+h4 {
+	font-size: 0.9em;
+}
+
+/* ========================================
+   Input
+   ======================================== */
+
+input:not([type=submit]):not([type=file]) { 
+	padding: .7em;  
+}
+input:not([type=submit]):not([type=file]):focus {
+	background: #F5F5F5; 
+	color: #F58634;
+	
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.50); 
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.50); 
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.50);
+} 
+
+
+label, input {
+    display: block;
+}
+input.text {
+    margin-bottom: 10px;
+    width: 99%;
+}
+
+/* ========================================
+   jQuery Custom Styling
+   ======================================== */
+  
+.ui-tooltip {
+	background: #073763;
+    padding: .5em 1em;
+    color: white;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: .8em;
+    box-shadow: 0 0 2px black;
+    border: .25px solid white;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset .dialog-btn {
+    /* removes extra width in IE */
+    background-color: #073763;
+    background-image: none;
+    color: #FFFFFF;
+    transition: all 0.25s ease 0s;
+}
+
+.validateTips {
+	border-radius: 5px;
+	color: #073763;
+	padding: 10px;
+	border: 1px solid #FFF;
+	text-align: center;
+}
+.selectmenu {
+	z-index: 1000;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+div#mainContainer { 
+	position: relative;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    margin: 5px 0 10px;
+    padding-bottom: 7px;
+    position: relative;
+}
+header .pageNavigation {
+    margin: 5px 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+header .left-content {
+    float: left;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 15px;
+    position: relative;
+    text-align: left;
+    width: 48%;
+}
+header .right-content {
+    float: right !important;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 0;
+    position: relative;
+    text-align: right;
+    width: 48%;
+}
+header .headerTitle {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 35px;
+    min-height: 1px;
+    padding: 0;
+    position: relative;
+    width: 75%;
+    text-shadow: 1px .75px 0px #fff, 2.25px 2px 0px rgba(0,0,0,0.15);
+}
+.pageTop {
+	background-color: #073763;
+    border-bottom: 5px solid #acbbd3;
+    box-shadow: 1px 1px 4px 0 #ccc;
+    position: relative;
+    z-index: 1;
+}
+.pageTop_top {
+	background-color: #f58634;	
+	height: 1.5em;
+}
+.pageTop_main-nav {
+	
+}
+.pageTop_logo {
+	display: inline-block;
+	max-width: 160px;
+	padding: .5em 1em;
+}
+.pageTop_main-nav img {
+	width: 100%;
+    height: auto;
+}
+.pageTop_menu {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.pageTop_actions {
+    align-items: center;
+    display: flex;
+    float: right;
+    height: 60px;
+    margin: 0 1em 0 0;
+}
+.pageTop .fa-calendar-o {
+	position: relative;
+}
+.pageTop .fa-calendar-o .credits {
+    border-radius: 50%;
+    bottom: 0;
+    color: #FFF;
+    font-size: 0.5em;
+    height: 22px;
+    left: 0;
+    line-height: 1.8;
+    margin: auto;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.container_fluid {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1140px;
+	min-height: 65px;	
+}
+.pageTop_actions-link {
+	display: inline-block;
+}
+.pageTop_actions-link .link-menu {
+	display: none;
+}
+.text-link {
+	color: #073763;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.crumb {
+	font-size: .9em;
+	font-weight: 700;
+}
+.btn {
+	color: white;
+	font-weight: 400;
+    display: inline-block;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    line-height: normal;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    overflow: visible;
+    /* removes extra width in IE */
+    background-image: none;
+    white-space: nowrap;
+}
+.btn-md {
+    padding: 10px 20px;
+}
+.btn-primary {
+    background-color: #f58634;
+    border-color: #f58634;
+    box-shadow: 0 2px 0 0 #f58634;
+    color: #fff;
+}
+.btn-login {
+	font-weight: bold;
+	padding: 12px 20px 8px 0;
+}
+.btn-credit {
+	padding: 12px 20px 8px 0;
+}
+.btn-take-exam, .btn-teaser {
+	font-size: .8em;
+}
+.btn-teaser {
+	margin-top: .5em;
+}
+.btn-unavailable {
+	background-color: #073763;
+    border-color: #073763;
+    box-shadow: 0 2px 0 0 #073763;
+    color: #fff;
+}
+
+
+
+.pageMiddle {
+	background-color: white;
+	border-radius: 5px;
+	padding: 1em 1em 5em 1em;
+	overflow: hidden;
+}
+	.loggedinText {
+		color: white;
+		float: left;
+    	width: 50%;
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+		background: #E9E9E9 none repeat scroll 0 0;
+
+	}
+	.bullets {
+		margin: 0 auto;
+    	overflow: hidden;
+		font-size: 1em;
+	    margin: 0 auto;
+	    width: 95%;
+	}
+	.col-sm-6 {
+		float:left;
+    	width: 50%;
+    	padding: 1em;
+	}
+	.bullets ul {
+    	padding: 10px 10px 10px 20px;
+	}
+	.bullets ul {
+    	margin: 30px 0;
+   	 	padding: 0 !important;
+   	 	list-style-type: none;
+	}
+	.bullets li, .heading h2, .heading h3 {
+	    letter-spacing: 1px;
+	}
+	.bullets ul li {
+    	line-height: 1.5;
+    	margin-bottom: 1em;
+	}
+	.bullets li {
+	    background-image: url("../img/icon-greyCheck.png");
+	    background-position: 2px 4px;
+	    background-repeat: no-repeat;
+	    background-size: 25px 19px;
+	    padding-left: 2.4em;
+	}
+	.bullets li span {
+	    font-size: 120%;
+	    font-weight: 700;
+	}
+	.blue, .indigo {
+	    color: #4c8ac0;
+	}
+	.red {
+	    color: #dc674c;
+	}
+	.teal {
+	    color: #1797b1;
+	}
+	.green {
+	    color: #4abc8d;
+	}
+	.darkgold {
+	    color: #e29735;
+	}
+	.purple {
+	    color: #7647A2;
+	}
+#knowledgeCenter {
+	
+}
+
+#dialog-chapter-test {
+	padding: 1em;
+}
+.orange {
+	color: #F58634;
+}
+.wrapper {
+    margin-left: 0;
+    margin-right: 0;
+}
+.pageTabs {
+    min-height: 1px;
+    margin-bottom: 2em;
+    padding-left: 0;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+    width: 60%;
+}
+.pageTabs-container {
+	width: 100%;
+	overflow: hidden;
+}
+.pageTabs ul {
+    margin: 0;
+    padding: 0;
+    display:flex;
+}
+.pageTabs li {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 1%;
+    padding: 15px 10px;
+    position: relative;
+    transition: background 0.2s ease 0s;
+    width: 30%;
+    text-align:center;
+    background-color: #073763;
+}
+.pageTabs li.lessonCourseTab {
+	display: none;
+}
+.pageTabs li:first-child {
+    margin-left: 0;
+}
+.pageTabs li.active {
+	background-color: #f58634;
+}
+.pageTabs li a {
+	color: white;
+}
+
+.pageTabs li a .tabTitle {
+    display: block;
+    font-size: 0.5em;
+}
+.pageTabs li a::after, .pageTabs li.active::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+}
+.pageTabs li.active::after {
+    border-width: 0 12px 12px;
+}
+.pageTabs li.active::after {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: #fff transparent;
+    border-style: solid;
+    display: block;
+    height: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: auto;
+    width: 0;
+}
+.pageTabs li a::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(33, 80, 92, 0) 0px, rgba(33, 80, 92, 0.25)) repeat scroll 0 0;
+    position: absolute;
+    top: 90%;
+}
+.courseOverview {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    color: #073763;
+    float: right !important;
+    margin: 0 0 0 1em;
+    padding: 10px 15px 0;
+    width: 38%;
+    height: auto;
+}
+.courseOverview ul {
+	list-style: none;
+	padding: 0;
+}
+.courseOverview ul li {
+	margin: 0 0 1em 0;
+}
+
+.courseTeaser {
+	background: #eee none repeat scroll 0 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    color: #073763;
+    float: right !important;
+    margin: 0;
+    padding: 10px;
+    min-width: 32.7%;
+	min-height: 85px;    
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	
+	-webkit-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+    
+}
+.courseTeaser ul {
+	margin: 0 0 0 1em;
+  	padding: 0;
+  	list-style: none;
+}
+.tab-content{
+	display: none;
+}
+.tab-content.current{
+	display: inherit;
+	padding: 10px;
+}
+.social-proof {
+    border-top: 1px solid #eee;
+    padding: 1em 0;
+    font-size: 1em;
+   	overflow: hidden;
+}
+.social-proof-view-count {
+    float: left;
+    margin-bottom: 0;
+    margin-right: 1em;
+    padding: .8em .5em;
+}
+.social-proof-view-count {
+    font-weight: 700;
+}
+.social-proof a.social-action {
+    display: block;
+    float: left;
+    margin: 0 1.5em 0.5em 0;
+}
+.social-icons {
+   
+}
+.overviewCTA {
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin: 0 0 15px 15px;
+    min-height: 1px;
+    padding: 25px 0;
+    position: relative;
+}
+
+.overviewCTA .ctaText {
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.overviewCTA .ctaText .tagline {
+    font-size: 1.4em;
+    font-weight: 300;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+.cta-gold {
+    background-image: linear-gradient(#ffdb7a, #f58634);
+    box-shadow: none;
+    font-weight: 600;
+    transition: background-position 0.25s ease 0s, border-color 0.25s ease 0s;
+    background-color: #f58634 !important;
+    background-image: linear-gradient(#ffdb7a, #f58634);
+    border-color: #f4b300 #f4b300 #f58634;
+    border-radius: 6px;
+    color: #fff !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-group-lg > .btn, .btn-lg {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.overviewCTA .btn-cta {
+    color: #fff !important;
+}
+.overviewCTA .btn {
+    display: block;
+    font-size: 1.2em;
+    line-height: 22px;
+    margin: 10px 0 5px;
+    float: left;
+    min-height: 1px;
+    position: relative;
+    -webkit-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+}
+.courseNav {
+	margin: 0 auto;	
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+	width: 90%;
+}
+.chaptersInCourse {
+    border-radius: 4px;
+    margin-top: 3em;
+    overflow: hidden;
+}
+.chaptersInCourse .chaptersInCourseHeader {
+    margin-top: 0 !important;
+}
+.chaptersInCourse .chaptersInCourseHeader {
+    background: #073763 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 125%;
+    padding: 10px 0;
+    text-align: center;
+}
+.chaptersInCourse .courseListContainer {
+    background: #eee none repeat scroll 0 0;
+    border-bottom: 40px solid #073763;
+    display: block;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.chaptersInCourse .courseListContainer .chapterGroup {
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 33.3333%;
+}
+.chaptersInCourse .courseListContainer a {
+    display: block;
+    padding: 15px 0;
+}
+.chaptersInCourse .courseListContainer a h2 {
+    font-size: 100%;
+    font-weight: 400;
+    margin: 0;
+}
+
+.courseExamTab {
+	float: left;
+	width: 100%;
+	padding: 0 1em 0 0;
+}
+.courseExamTab ul {
+ 	margin: 0;
+  	padding: 0;
+  	list-style: none;
+}
+.courseExamTab ul li.examListing-chapter {
+	color: #777777;
+	position: relative;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	padding: 1em .5em;
+	transition: all 0.1s ease 0s;
+}
+
+.examListing-header {
+	padding: 1em 0;
+	border-bottom: 1px solid #eee;
+}
+.examListing-header .header-left {
+	float: left;
+	width: 55%;
+}
+.examListing-header .header-right {
+	float: left;
+	padding: 0 .5em;
+}
+.examListing-chapter {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.examListing-chapter .name {
+	padding-left: .5em;
+	width: 55%;
+}
+.examListing-chapter .score {
+	width: 20%;
+	padding: 0 2em 0 .5em;
+}
+.examListing-chapter .action {
+	
+}
+.examListing-chapter > .score > .status {
+	display: none;
+}
+
+/*
+ * Syllabus
+ */
+.courseInfoTab {
+	width: 100%;
+	
+}
+button {
+    margin: 0;
+    padding: 0;
+    background: inherit;
+    border: inherit;
+    font: inherit;
+    outline: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: inherit;
+}
+/*
+ * Lesson Page
+ */
+#lessonContentTab {
+	padding: 0;
+}
+.pageTabContent {
+	margin: 10px 0;
+	overflow: hidden;
+}
+.pageTabContentWithSidebar {
+	float: left;
+	width: 66.6667%;
+	min-height: 1px;
+    padding-left: 0;
+    padding-right: 15px;
+    position: relative;
+}
+.pageTabContent .sidebar {
+	float: right;
+	width: 33.3333%;
+	min-height: 1px;
+    padding-left: 10px;
+    padding-right: 0;
+    position: relative;
+}
+.videoOverlay {
+	display: none;
+}
+.videoContainer {
+	width: 100%;
+	height: 100%;
+	background-color: #EEEEEE;
+  	position: relative;
+  	border-radius: 5px;
+  	padding: .5em;
+}
+.freeVideo {
+	padding: 1em;
+}
+
+.videoBlock {
+  background: #000000;
+  filter: alpha(opacity=50);
+  /* IE */
+  -moz-opacity: 0.5;
+  /* Mozilla */
+  opacity: 0.5;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.videoBlockText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.videoBlockText-title {
+	background: rgba(0, 0, 0, 0.4); 
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 2em 1em;
+}
+.videoBlockText-inner {
+	font-size: 2em;
+    padding: 2em 1em;
+    text-align: center;
+}
+.videoBlockText-inner > .register-text {
+	color: #F58634;
+	font-style: italic;
+	padding: 15px;
+}
+.videoContainer video {
+    min-width: 100%;
+    border-radius: 5px;
+    width: 100%    !important;
+  	height: auto   !important;
+}
+
+#lessonContentTab .overviewCTA {
+	width: 100%;
+}
+/*
+ * Sidebar
+ */
+.courseNavContainer {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.courseNavContainer .courseNavHeader {
+    background: #eee none repeat scroll 0 0;
+    border-bottom: 3px solid #f58634;
+    padding: 15px;
+    position: relative;
+    display: block;
+}
+.courseNavContainer .courseNavHeader .text {
+    margin: 0 0 0 25px;
+}
+.courseNavContainer .courseNavHeader .fa {
+    color: #787878;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+.courseNavContainer p {
+    color: #787878;
+}
+.courseNavContainer .courseNavHeader .text p {
+    font-size: 1em;
+    margin: 0;
+}
+.courseNavContainer .courseNavHeader .text p:first-of-type {
+    margin-bottom: 5px;
+    color: #073763;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.courseNavContainer .courseNavHeader .text a {
+    color: #F58634;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.courseNavContainer .courseNavigator {
+    background-color: #fff;
+    border-bottom: 3px solid #f58634;
+    display: block;
+    font-size: .9em;
+    margin-bottom: 10px;
+    max-height: 95vh;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.courseNavContainer .courseNavigator .chapterContent a,
+.courseNavContainer .courseNavigator .chapterContent span.lessonName {
+    float: left !important;
+    font-weight: 700;
+    max-width: 80%;
+}
+
+.courseNavContainer .courseNavigator .chapterContent span.lessonTime {
+    color: #073763;
+    float: right !important;
+    padding: 10px;
+}
+/*
+ * Main Page Middle
+ */
+.homeBody {
+    overflow: hidden;
+}
+#mainContainer {
+    background-color: #fff;
+    padding-bottom: 50px;
+    min-height: 800px;
+}
+#mainContainer.container-fluid {
+    padding: 0;
+}
+.masthead, .masthead .textblock {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.masthead {
+    background: #EEEEEE none repeat scroll 0 0;
+    padding-bottom: 20px;
+}
+.masthead {
+    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopB.jpg") no-repeat scroll right top;
+    height: 556px;
+}
+
+.masthead .textblock {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 400;
+    left: 4%;
+    line-height: 1;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+ 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);    
+ 	top: auto;
+    top: 20%;
+    width: 510px;
+}
+.masthead .textblock .subtitle {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding: 15px 10px;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+.masthead .textblock .subtitle::after {
+    border: medium none;
+}
+.masthead .textblock .subtitle .btn {
+    display: inline-block;
+    margin-top: 12px;
+}
+.cta-orange {
+	display: table;
+	margin: 0 auto;
+	width: auto;
+    background-color: #F58634 !important;
+    background-image: linear-gradient(#F58634, #d66f20);
+    background-repeat: repeat-x;
+    border-radius: 6px;
+    border-color: #F58634 #F58634 #d66f20;
+    box-shadow: none;
+    color: #fff !important;
+    font-weight: 700;
+    padding: 1em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.42);
+    transition: background-position 0.25s ease 0s, border-color 0.25s ease 0s;
+}
+.masthead .loginBlock {
+	border-bottom: medium none;
+    border-radius: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 18px 4%;
+    position: absolute;
+    top: auto;
+    width: 100%;
+    animation: 1.5s ease 0s normal forwards 1 running slideIn;
+    background: rgba(7, 55, 99, 0.8) none repeat scroll 0 0;
+    box-shadow: 0 -5px 50px 10px rgba(255, 255, 255, 0.3);
+}
+
+.loginBlock .headingWrapper {
+	color: #B3D4FC;
+    float: left;
+    font-size: 1.2em;
+    margin: 0 2% 0 0;
+    text-align: left;
+    width: 44%;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.loginBlock .col1, .loginBlock .col2, .loginBlock .formWrapper, .loginBlock .headingWrapper {
+    text-align: left;
+}
+
+.loginBlock .headingWrapper strong {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.masthead .loginBlock .headingWrapper strong {
+    color: #fff;
+}
+
+.loginBlock .formWrapper {
+    float: left;
+    font-size: 1em;
+    margin: 5px 0 0;
+    text-align: left;
+    width: 54%;
+}
+.loginBlock .formWrapper .col1 {
+	float: right;
+    margin-bottom: 0;
+    margin-left: 2%;
+}
+.loginBlock .formWrapper .col1:first-of-type {
+    margin-left: 0;
+}
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857;
+    height: 34px;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.loginBlock .formWrapper .col2 {
+    float: right;
+    margin: 0 0 0 2%;
+    text-align: left;
+}
+.loginBlock .userLogin {
+	color: #fff;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
+.standardLink {
+	color: #F58634;
+    cursor: pointer !important;
+    text-decoration: underline;
+}
+.innerContainer {
+    margin: 0 auto 3%;
+    overflow: hidden;
+    width: 85%;
+}
+.innerContainer h2, .innerContainer h3 {
+    color: #073763;
+    font-weight: 300;
+    font-size: 36px;
+    margin: 20px 0 60px;
+    text-align: center;
+    line-height: 110%;
+}
+.offerContainer {
+	display: flex;
+	padding: 1em;
+	background: #E9E9E9
+}
+.offer-discount {
+}
+.offer-text {
+	padding: .5em;
+}
+.offer-text .countdown {
+	display: table;
+	margin: 1em auto;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #073763;
+}
+.offer-text .countdown-sm {
+	display: table;
+	margin: 1em auto;
+	font-size: 1em;
+	font-weight: 700;
+	color: #073763;
+}
+.offerContainer h3, .offerContainer h4 {
+    color: #073763;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 20px 0 20px;
+    text-align: left;
+    line-height: 110%;
+}
+.offerContainer h4 {
+	font-size: 1.3em;
+	text-align: center;
+}
+.goals {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden;
+}
+.homepage-section {
+    padding: 55px 35px;
+}
+.goalSet .goalTile {
+    float: left;
+    padding: 15px;
+    width: 33.3333%;
+}
+.goalSet .goalTile-inner {
+    border-radius: 6px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 22px 15px;
+    text-align: center;
+}
+.goalSet .goalTile-inner.grammar, .goalSet .goalTile-inner.vocabulary,.goalSet .goalTile-inner.reading {
+    position: relative;
+    text-decoration: none !important;
+    transition: margin 0.25s ease 0s;
+}
+.goalSet .goalTile-inner.grammar {
+    background-color: #0A6D98;
+}
+.goalSet .goalTile-inner.vocabulary {
+    background-color: #DDDDDD;
+}
+.goalSet .goalTile-inner.reading {
+     background-color: #DDDDDD;
+}
+
+.goalSet .goalTile-inner.grammar::before {
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 0 solid #4dc1b8;
+    bottom: 0;
+    position: absolute;
+    transition: bottom 0.25s ease 0s;
+}
+.goalSet .goalTile-inner a {
+    text-decoration: none !important;
+}
+
+.goalSet .goalTile .icon  {
+    border-radius: 50%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    height: 90px;
+    margin: 5px auto 15px;
+    text-align: center;
+    width: 90px;
+}
+
+.goalSet .goalTile .grammar-icon {
+    background: #fff url("../img/grammar.png") no-repeat center;
+    
+}
+.goalSet .goalTile .vocabulary-icon {
+    background: #fff url("../img/vocab.png") no-repeat center;
+}
+.goalSet .goalTile .reading-icon {
+    background: #fff url("../img/reading.png") no-repeat center;
+}
+
+.goalSet .goalTile-inner.grammar .icon {
+    color: #4dc1b8;
+}
+.goalSet .goalTile-inner.vocabulary .icon {
+    color: #4dc1b8;
+}
+.goalSet .goalTile-inner.reading .icon {
+    color: #4dc1b8;
+}
+
+[class*=" icon-"], [class^="icon-"] {
+    -moz-osx-font-smoothing: grayscale;
+    font-family: icomoon !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+.goalSet .goalTile .icon [class^="icon-"] {
+    font-size: 57.6px;
+    line-height: 90px;
+}
+.goalSet .goalTile-inner.grammar .icon [class^="icon-"] {
+    color: inherit;
+}
+
+.goalSet .goalTile .title {
+    font-size: 1.55em;
+    font-weight: 600;
+}
+.goalSet .goalTile-inner .title {
+    color: #fff;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.goalTile-btn {
+	position: relative;
+}
+
+.goalSet .goalTile-inner .btn {
+    color: #555;
+    display: block;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.btn-white {
+    background-color: #fff;
+    border: medium none !important;
+    box-shadow: 0 2px 0 0 #e0e0e0;
+    color: #0687aa !important;
+}
+/*
+ * Callout
+ */
+.callout {
+    margin: 0 auto;
+    text-align: center;
+}
+.callout .img-circle {
+	border: 5px solid #073763;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.blue-bg {
+    background: #E69138 none repeat scroll 0 0;
+}
+
+.media, .media-body {
+    overflow: hidden;
+    margin-top: 0;
+}
+.media-left {
+    padding: 10px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+.media-middle {
+    vertical-align: middle;
+}
+.callout .media-left img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.media-body {
+	text-align: left;
+    width: 100%;
+}
+.callout h3, .callout h4 {
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 110%;
+}
+.callout h4 {
+    font-size: 30px;
+    margin: 0.25em 0;
+}
+
+.callout h5, .inputWrapper {
+    font-family: "Droid Serif","Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-style: italic;
+}
+.innerContainer h5 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 0.75em;
+    text-align: center;
+}
+.callout h5 {
+    color: #073763;
+    font-size: 1.5em;
+    margin: 0.25em 0;
+    text-align: inherit;
+}
+.callout p {
+    color: #fff;
+    font-size: 15px;
+}
+.callout .standardLink {
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+/*
+ * Pricing Page 
+ */
+.plan-container {
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.plan {
+	width: 30%;
+	height: 100px;
+	background-color: #073763;
+	border-radius: 5px;
+}
+
+
+
+/*
+ * Dialog Alert
+ */
+#dialog-alert p {
+	display: flex;
+}
+.ui-icon-error {
+	color: red;
+	padding-right: 1em;
+}
+.ui-icon-success {
+	color: green;
+	padding-right: 1em;
+}
+/*
+ *  Shadows 
+ */
+.box-shadow {
+	-webkit-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+	box-shadow: 3px 5px 8px -6px rgba(0,0,0,0.75);
+}
+/*
+ * Absolute center
+ */
+.center {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+   
+   /** Position should be absolute */
+    position: absolute;
+    /** And box must have a width, any width */
+    width: 100%;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 60em) {
+	.masthead {
+	    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopB_sm.jpg") no-repeat scroll right top;
+	    height: 500px;
+	}
+}
+@media only screen and (min-width: 55em) {
+	.pageTop_mobileNav {
+		display: none;
+	}
+}
+@media only screen and (max-width: 55em) {
+	 body {
+	 	font-size: 95%;
+	}
+	 .pageTop_menu, .pageTop_actions-link .link-logout, .pageTop_actions-link .link-signup {
+		display: none;
+	}
+	.pageTop_actions-link .link-menu {
+		display: inline-block;
+	}
+	
+	.goalSet .goalTile {
+	    float: none;
+	    width: 90%;
+	    margin-left: 5%;
+	}
+	.goalSet .goalTile-inner a {
+	    text-align: left;
+	}
+	.goalSet .goalTile-inner .title {
+		margin-bottom: 0.5em;
+    	margin-left: 2.6em;
+	}
+	.goalTile-btn {
+	    margin-left: 4em;
+	    position: relative;
+	}
+	
+	.goalSet .goalTile .icon {
+	 	position: absolute;
+	 	top: 10px;
+	 	left: -25px;
+	 	height: 80px;
+	    width: 80px;
+	}
+	.masthead .textblock {
+		font-size: 4em;
+	}
+	.masthead .textblock .subtitle {
+		font-size: 18px;
+	}
+	.callout .img-circle {
+	    border: 4px solid #073763;
+	    width: 250px;
+	}
+	.courseOverview, .courseTeaser {
+		display: none;
+	}
+	.pageTabs-container {
+	    text-align: center;
+	}
+	.pageTabs, .overviewCTA, .courseNav, .courseInfoTab, .courseExamTab {
+		width: 100%;
+	}
+	.overviewCTA {
+		margin: 0;
+	}
+	.pageTabs, .courseExamTab {
+		padding: 0;
+	}
+	.pageTabs {
+		float: none;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	.pageTabs li {
+		width: 31%;
+	}
+	.pageTabContentWithSidebar {
+	    float: none;
+	    width: 100%;
+	    padding: 0;
+	}
+	.pageTabContent .sidebar {
+		float: none;
+    	margin: 1em auto;
+    	width: 100%;
+	    padding: 0
+    }
+    .courseNavContainer .courseNavigator {
+	    max-height: none;
+	}
+	.pageTabs li.lessonCourseTab {
+		display: inline-block;
+	}
+	.tab-content.current {
+	    padding: 0;
+	}
+	.freeVideo > .videoContainer {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media only screen and (max-width: 48em) {
+	body {
+	 	font-size: 90%;
+	}
+	.masthead .textblock {
+		width: 400px;
+	}
+	.media-body, .media-left, .media-right {
+		display:block;
+	}
+	.media-body {
+		text-align: center;
+	}
+	
+	.col-sm-6 {
+	    float: none;
+	    width: 100%;
+	    padding: 0;
+	}
+	.bullets {
+		padding: 1em 1em 2em 1em;
+		font-size: 1.2em;
+		
+	}
+	.bullets ul {
+	    list-style-type: none;
+    	padding: 1em 0 0 0 !important;
+    	margin: 0;
+    	padding: 0;
+	}
+	.bullets ul li:last-child {
+		margin-bottom: 0;
+	}
+	.overviewCTA .btn {
+		margin: 0;
+	}
+	.pageTop .fa-calendar-o .credits {
+	    line-height: 1.9;
+	}
+}
+
+@media only screen and (max-width: 44em) {
+	body {
+	 	font-size: 85%;
+	}
+	.masthead {
+	    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopC.jpg") no-repeat scroll right top;
+	    height: 400px;
+	}
+	.masthead .textblock .subtitle {
+	    font-size: 16px;
+	}
+	.loginBlock .formWrapper .col1 {
+	    display: none;
+	}
+	.goalSet .goalTile .grammar-icon, .goalSet .goalTile .reading-icon, .goalSet .goalTile .vocabulary-icon {
+	    background-size: 50px 37px;
+	}
+	.goalSet .goalTile .icon {
+	    height: 70px;
+	    width: 70px;
+	}
+	.videoBlockText-inner {
+	    font-size: 2em;
+	    padding: 1.5em 0;
+	}
+	.videoBlockText-inner > .register-text {
+	    font-style: normal;
+	}
+	.pageTop .fa-calendar-o .credits {
+	    line-height: 2.1;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.homepage-section {
+	    padding: 35px 25px;
+	}
+	.innerContainer h2, .innerContainer h3 {
+   		margin: 20px;
+	}
+}
+@media only screen and (max-width: 38em) {
+	.masthead .textblock {
+	    width: 380px;
+	}
+	.btn-md {
+	    font-size: .8em;
+	}
+	.innerContainer h2, .innerContainer h3 {
+		font-size: 30px;
+	}
+	.innerContainer {
+	    margin: 0;
+	    width: 100%;
+	}
+}
+@media only screen and (max-width: 36em) {
+	.masthead {
+		background: #5786B1;
+		margin: 0;
+		padding: 2em 1em 1em;
+		position: relative;
+		height: auto;
+	}
+	.masthead .textblock {
+	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	    bottom: 0;
+	    color: #fff;
+	    font-size: 4em;
+	    font-weight: 400;
+	    left: 0;
+	    line-height: 1;
+	    padding: 0;
+	    position: relative;
+	    text-align: center;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	    top: 5%;
+	    width: 100%;
+	}
+	.masthead .textblock .subtitle .btn {
+	    display: none;
+	}
+	.masthead .loginBlock {
+	    animation: 1.5s ease 0s normal forwards 1 running slideIn;
+	    background: rgba(7, 55, 99, 0.8) none repeat scroll 0 0;
+	    border-bottom: medium none;
+	    border-radius: 5px;
+	    bottom: 0;
+	    box-shadow: none;
+	    margin: 2em auto;
+	    overflow: hidden;
+	    padding: 18px 4%;
+	    position: relative;
+	    top: auto;
+	    width: 90%;
+	}
+	.loginBlock .headingWrapper {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.loginBlock .formWrapper {
+	    float: none;
+	    margin: 0;
+	    text-align: center;
+	    width: 100%;
+	}
+	.loginBlock .formWrapper .col2 {
+	    float: none;
+	    margin: 1em auto;
+	    text-align: center;
+	    font-size: 1.4em;
+	}
+	.loginBlock .userLogin {
+	    margin-top: 0;
+	    text-align: center;
+	}
+	.masthead .textblock .subtitle {
+	    color: white;
+	    font-style: italic;
+	    padding: 0;
+	    
+	}
+	.pageTop_main-nav img {
+	    height: auto;
+	    width: 80%;
+	}
+	.pageTop_top {
+	    height: 0.5em;
+	}
+	.pageTop_actions {
+		height: 52px;	
+	}
+	.callout p {
+	    text-align: left;
+	}
+	.chaptersInCourse .courseListContainer .chapterGroup {
+	    float: none;
+	    width: 100%;
+	}
+	.chaptersInCourse .courseListContainer a  {
+		padding: 5px 0;
+	}
+	.overviewCTA .ctaText, .overviewCTA .btn, .social-proof-view-count {
+		width: 100%;
+	}
+	.overviewCTA .btn {
+		margin-top: 1em;
+	}
+	.jssocials {
+		padding: 0.8em 0.5em;
+	}
+	.examListing-chapter {
+	    display: block;
+	}
+	.examListing-chapter .name {
+	    float: left;
+	    padding-left: 0.5em;
+	    padding-right:0.5em;
+	    width: 70%;
+	}
+	.examListing-header .header-left {
+	    width: 70%;
+	}
+	.examListing-header .header-right {
+	    padding: 0;
+	    text-align: center;
+	    width: 30%;
+	}
+	.examListing-chapter .score {
+	    float: left;
+	    padding: 0 0 0 0.5em;
+	    text-align: center;
+	    width: 30%;
+	}
+	.examListing-chapter .action {
+	    float: right;
+	    min-width: 30%;
+	}
+	.btn-take-exam {
+	    width: 100%;
+	}
+	.jssocials-shares {
+	    font-size: 0.8em;
+	}
+	.videoBlockText-title {
+	    font-size: 0.8em;
+	    padding: 1em;
+	}
+	.videoBlockText-inner {
+	    font-size: 1.2em;
+	    padding: 1.5em 0;
+	}
+	.videoBlockText-inner > .register-text {
+	    font-style: normal;
+	}
+	.btn-group-lg > .btn, .btn-lg {
+	    font-size: 1em;
+	    padding: 10px 30px;
+	}
+	.loggedinText {
+    	width: 100%;
+	}
+	.offerContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	.offer-discount {
+		display: table;
+		margin: 0 auto;
+	}
+	.offer-text h3 {
+		text-align: center;
+	}
+
+}
+@media only screen and (max-width: 25em) { 
+	.loginBlock .headingWrapper, .loggedinText {
+		text-align: center;
+	}
+	.examListing-chapter .action, .examListing-header .header-left {
+	    width: 100%;
+	}
+	.examListing-header .header-right {
+	    display:none;
+	}
+	.examListing-chapter .name, .examListing-chapter .score {
+		width: 100%;
+		text-align: left;
+	}
+	.examListing-chapter > .score > .status {
+		display: inline-block;
+	}
+
+	.btn-login {
+		padding: 12px 20px 8px 0;
+	}
+	.btn-credit {
+		padding: 12px 20px 8px 0;
+	}
+	.masthead .textblock {
+		font-size: 3em;
+	}
+	.jssocials-shares {
+	    font-size: 0.68em;
+	}
+	.videoBlockText-title {
+	    font-size: 0.6em;
+	    padding: 1em;
+	}
+	.videoBlockText-inner {
+	    font-size: 1em;
+	    padding: 0;
+	}
+	.videoBlockText-inner > .register-text {
+	    font-style: normal;
+	}
+	.btn-group-lg > .btn, .btn-lg {
+	    font-size: 1em;
+	    padding: 10px 30px;
+	}
+	
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
