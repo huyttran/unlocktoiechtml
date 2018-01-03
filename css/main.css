@@ -981,7 +981,7 @@ button {
     padding-bottom: 20px;
 }
 .masthead {
-    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopB.jpg") no-repeat scroll right top;
+    background: rgba(0, 0, 0, 0) url("../image/mobile-learning-desktopB.jpg") no-repeat scroll right top;
     height: 556px;
 }
 
@@ -1504,7 +1504,7 @@ button {
    ========================================================================== */
 @media only screen and (max-width: 60em) {
 	.masthead {
-	    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopB_sm.jpg") no-repeat scroll right top;
+	    background: rgba(0, 0, 0, 0) url("./image/mobile-learning-desktopB_sm.jpg") no-repeat scroll right top;
 	    height: 500px;
 	}
 }
@@ -1652,7 +1652,7 @@ button {
 	 	font-size: 85%;
 	}
 	.masthead {
-	    background: rgba(0, 0, 0, 0) url("../img/mobile-learning-desktopC.jpg") no-repeat scroll right top;
+	    background: rgba(0, 0, 0, 0) url("../image/mobile-learning-desktopC.jpg") no-repeat scroll right top;
 	    height: 400px;
 	}
 	.masthead .textblock .subtitle {
